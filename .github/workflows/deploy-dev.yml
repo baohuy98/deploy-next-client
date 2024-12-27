@@ -63,7 +63,7 @@ jobs:
             git fetch --all
             git reset --hard origin/dev
             echo "${{secrets.ENV_DEV}}" > .env
-            npm i --force
+            npm i --force                                                                                         
             npm run build
             pm2 restart Dev_NextJs
 
